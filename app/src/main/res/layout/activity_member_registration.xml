@@ -8,7 +8,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_margin_large">
 
 
         <ImageView
@@ -23,8 +24,8 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            style="@style/EcommerceTitleText"
             android:id="@+id/textViewTitle"
+            style="@style/EcommerceTitleText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
@@ -54,21 +55,8 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/TextInputLayoutEmail"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="32dp"
-            app:boxBackgroundColor="@color/input_bg"
-            app:boxCornerRadiusBottomEnd="10dp"
-            app:boxCornerRadiusBottomStart="10dp"
-            app:boxCornerRadiusTopEnd="10dp"
-            app:boxCornerRadiusTopStart="10dp"
-            app:boxStrokeColor="@color/input_stroke"
-            app:boxStrokeWidth="@dimen/input_stroke_width"
+            style="@style/TextInputStyle"
             app:endIconDrawable="@drawable/ic_mail"
-            app:endIconMode="custom"
-            app:endIconTint="@color/black"
-            app:hintEnabled="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutName">
@@ -103,68 +91,102 @@
 
         <TextView
             android:id="@+id/textViewOr"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutPassword"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_margin_large"
             android:text="@string/or"
             android:textSize="16sp"
-            android:layout_margin="@dimen/activity_margin_large"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_height="wrap_content"/>
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutPassword" />
 
 
         <View
             android:layout_width="0dp"
-            android:background="@color/input_bg"
-            app:layout_constraintTop_toTopOf="@+id/textViewOr"
+            android:layout_height="2dp"
             android:layout_marginEnd="@dimen/activity_margin_small"
+            android:background="@color/input_bg"
             app:layout_constraintBottom_toBottomOf="@+id/textViewOr"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/textViewOr"
-            android:layout_height="2dp"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewOr" />
 
 
         <View
             android:layout_width="0dp"
-            android:background="@color/input_bg"
-            app:layout_constraintTop_toTopOf="@+id/textViewOr"
+            android:layout_height="2dp"
+            android:layout_marginStart="@dimen/activity_margin_small"
             android:layout_marginEnd="@dimen/activity_margin_small"
+            android:background="@color/input_bg"
             app:layout_constraintBottom_toBottomOf="@+id/textViewOr"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginStart="@dimen/activity_margin_small"
             app:layout_constraintStart_toEndOf="@+id/textViewOr"
-            android:layout_height="2dp"/>
+            app:layout_constraintTop_toTopOf="@+id/textViewOr" />
 
         <ImageView
             android:id="@+id/imageViewFacebookLogo"
-            android:layout_width="64dp"
-            android:background="@drawable/register_icon_bg"
-            android:src="@drawable/ic_icon_facebook"
-            android:scaleType="centerInside"
+            android:layout_width="@dimen/reg_icon_size"
+            android:layout_height="@dimen/reg_icon_size"
             android:layout_margin="@dimen/activity_margin_small"
-            app:layout_constraintTop_toBottomOf="@+id/textViewOr"
-            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/register_icon_bg"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_icon_facebook"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_height="64dp"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewOr" />
+
+        <ImageView
+            android:id="@+id/imageViewGoogle"
+            android:layout_width="@dimen/reg_icon_size"
+            android:layout_height="@dimen/reg_icon_size"
+            android:layout_margin="@dimen/activity_margin_small"
+            android:background="@drawable/register_icon_bg"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_google"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewFacebookLogo"
+            app:layout_constraintTop_toBottomOf="@+id/textViewOr" />
 
 
-         <com.google.android.material.button.MaterialButton
-             app:icon="@drawable/ic_arrow_forward"
-             style="@style/Widget.MaterialComponents.Button"
-             app:iconGravity="textEnd"
-             app:backgroundTint="@color/black"
-             android:textAllCaps="false"
-             android:padding="@dimen/activity_margin_small"
-             android:layout_marginTop="@dimen/activity_margin_large"
-             android:layout_marginStart="@dimen/activity_margin_small"
-             android:layout_marginEnd="@dimen/activity_margin_small"
-             app:layout_constraintStart_toStartOf="parent"
-             android:text="@string/create_an_account"
-             app:layout_constraintEnd_toEndOf="parent"
-             app:layout_constraintTop_toBottomOf="@+id/imageViewFacebookLogo"
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/imageViewApple"
+            android:layout_width="@dimen/reg_icon_size"
+            android:layout_height="@dimen/reg_icon_size"
+            android:layout_margin="@dimen/activity_margin_small"
+            android:background="@drawable/register_icon_bg"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_apple_logo"
+            app:layout_constraintStart_toEndOf="@+id/imageViewFacebookLogo"
+            app:layout_constraintTop_toBottomOf="@+id/textViewOr" />
 
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonLogin"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_input_margin"
+            android:layout_marginTop="@dimen/activity_margin_large"
+            android:layout_marginEnd="@dimen/activity_input_margin"
+            android:padding="@dimen/activity_margin_small"
+            android:text="@string/create_an_account"
+            android:textAllCaps="false"
+            app:backgroundTint="@color/black"
+            app:icon="@drawable/ic_arrow_forward"
+            app:iconGravity="textEnd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewFacebookLogo" />
+
+        <TextView
+            android:id="@+id/textViewLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_margin_small"
+            android:text="@string/login_instead"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
