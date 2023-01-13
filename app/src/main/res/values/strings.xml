@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MEST Ecommerce</string>
+    <string name="app_tagline">Buy now</string>
+    <string name="enter_email_address">Enter Email Address</string>
+    <string name="mi_ecommerce">Mi-Ecommerce</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="become_a_member">Become a member!</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="or">or</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="login_instead"><font fgcolor='#000000' >Already have an account? </font> <font fgcolor='#023F9F' >Sign In.</font></string>
+</resources>

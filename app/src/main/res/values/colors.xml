@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_base">#0361F5</color>
+    <color name="primary_base_dark">#023F9F</color>
+    <color name="primary_base_light">#2173F4</color>
+    <color name="input_bg">#F4F7FC</color>
+    <color name="button_bg">#1E1D2E</color>
+    <color name="input_stroke">#023F9F</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray_stroke">#DCE1F3</color>
+</resources>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MemberRegistration">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="@dimen/activity_margin_small"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_love_in_the_air"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            style="@style/EcommerceTitleText"
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/become_a_member"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewLogo" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TextInputLayoutName"
+            style="@style/TextInputStyle"
+            app:endIconDrawable="@drawable/ic_person_outline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_your_name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TextInputLayoutEmail"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            app:boxBackgroundColor="@color/input_bg"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxStrokeColor="@color/input_stroke"
+            app:boxStrokeWidth="@dimen/input_stroke_width"
+            app:endIconDrawable="@drawable/ic_mail"
+            app:endIconMode="custom"
+            app:endIconTint="@color/black"
+            app:hintEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_email_address"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutPassword"
+            style="@style/TextInputStyle"
+            app:endIconDrawable="@drawable/ic_password_outlined"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutEmail"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_your_password"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/textViewOr"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutPassword"
+            android:layout_width="wrap_content"
+            android:text="@string/or"
+            android:textSize="16sp"
+            android:layout_margin="@dimen/activity_margin_large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_height="wrap_content"/>
+
+
+        <View
+            android:layout_width="0dp"
+            android:background="@color/input_bg"
+            app:layout_constraintTop_toTopOf="@+id/textViewOr"
+            android:layout_marginEnd="@dimen/activity_margin_small"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewOr"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textViewOr"
+            android:layout_height="2dp"/>
+
+
+        <View
+            android:layout_width="0dp"
+            android:background="@color/input_bg"
+            app:layout_constraintTop_toTopOf="@+id/textViewOr"
+            android:layout_marginEnd="@dimen/activity_margin_small"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewOr"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/activity_margin_small"
+            app:layout_constraintStart_toEndOf="@+id/textViewOr"
+            android:layout_height="2dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewFacebookLogo"
+            android:layout_width="64dp"
+            android:background="@drawable/register_icon_bg"
+            android:src="@drawable/ic_icon_facebook"
+            android:scaleType="centerInside"
+            android:layout_margin="@dimen/activity_margin_small"
+            app:layout_constraintTop_toBottomOf="@+id/textViewOr"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_height="64dp"/>
+
+
+         <com.google.android.material.button.MaterialButton
+             app:icon="@drawable/ic_arrow_forward"
+             style="@style/Widget.MaterialComponents.Button"
+             app:iconGravity="textEnd"
+             app:backgroundTint="@color/black"
+             android:textAllCaps="false"
+             android:padding="@dimen/activity_margin_small"
+             android:layout_marginTop="@dimen/activity_margin_large"
+             android:layout_marginStart="@dimen/activity_margin_small"
+             android:layout_marginEnd="@dimen/activity_margin_small"
+             app:layout_constraintStart_toStartOf="parent"
+             android:text="@string/create_an_account"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/imageViewFacebookLogo"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
