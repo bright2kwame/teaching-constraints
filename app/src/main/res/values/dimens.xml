@@ -5,5 +5,5 @@
     <dimen name="activity_input_margin">32dp</dimen>
     <dimen name="input_stroke_width">0.5dp</dimen>
     <dimen name="input_corner_radius">10dp</dimen>
-    <dimen name="reg_icon_size">64dp</dimen>
+    <dimen name="reg_icon_size">48dp</dimen>
 </resources>
