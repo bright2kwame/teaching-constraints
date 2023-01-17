@@ -6,4 +6,6 @@
     <dimen name="input_stroke_width">0.5dp</dimen>
     <dimen name="input_corner_radius">10dp</dimen>
     <dimen name="reg_icon_size">48dp</dimen>
+    <dimen name="button_radius">8dp</dimen>
+    <dimen name="large_text">24sp</dimen>
 </resources>
