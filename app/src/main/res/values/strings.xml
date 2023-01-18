@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">eEormesse</string>
-    <string name="app_tagline">...the new style</string>
+    <string name="app_tagline">#theNewStyle</string>
     <string name="app_version">1.0.0</string>
     <string name="enter_email_address">Enter Email Address</string>
     <string name="mi_ecommerce">Mi-Ecommerce</string>

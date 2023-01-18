@@ -18,7 +18,7 @@
             android:layout_height="200dp"
             android:layout_marginTop="@dimen/activity_margin_small"
             android:scaleType="centerCrop"
-            android:src="@drawable/ic_love_in_the_air"
+            android:src="@drawable/ic_login_logo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
