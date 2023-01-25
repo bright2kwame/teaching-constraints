@@ -14,11 +14,11 @@
 
         <ImageView
             android:id="@+id/imageViewLogo"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="@dimen/app_logo_size"
+            android:layout_height="@dimen/app_logo_size"
             android:layout_marginTop="@dimen/activity_margin_small"
             android:scaleType="centerCrop"
-            android:src="@drawable/ic_love_in_the_air"
+            android:src="@drawable/app_main_logo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -86,6 +86,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/enter_your_password"
                 android:imeOptions="actionUnspecified"
+                android:background="@android:color/transparent"
                 android:inputType="textPassword" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -96,11 +97,12 @@
             android:id="@+id/included"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutPassword" layout="@layout/social_media_banner" />
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutPassword"
+            layout="@layout/social_media_banner" />
 
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/buttonLogin"
+            android:id="@+id/buttonRegister"
             style="@style/PrimaryButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -123,7 +125,7 @@
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonRegister" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

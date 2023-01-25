@@ -16,14 +16,14 @@
 
     <style name="Theme.MESTEcommerce.Fullscreen" parent="Theme.MESTEcommerce">
         <item name="android:windowDisablePreview">true</item>
-        <item name="android:windowBackground">@color/primary_base</item>
-        <item name="backgroundColor">@color/primary_base</item>
-        <item name="android:background">@color/primary_base</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="backgroundColor">@color/white</item>
+        <item name="android:background">@color/white</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowContentOverlay">@null</item>
-        <item name="android:navigationBarColor">@color/primary_base</item>
+        <item name="android:navigationBarColor">@color/white</item>
     </style>
 
     <style name="EcommerceTitleText" parent="TextAppearance.AppCompat">
@@ -33,7 +33,7 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="TextInputStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+    <style name="TextInputStyle" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="backgroundColor">@color/input_bg</item>
@@ -47,6 +47,9 @@
         <item name="endIconMode">custom</item>
         <item name="endIconTint">@color/black</item>
         <item name="hintEnabled">true</item>
+        <item name="boxBackgroundMode">filled</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:background">@color/input_bg</item>
     </style>
 
     <style name="PrimaryButtonStyle" parent="Widget.MaterialComponents.Button">
@@ -55,7 +58,20 @@
         <item name="backgroundTint">@color/black</item>
         <item name="textAllCaps">false</item>
         <item name="android:padding">@dimen/activity_margin_small</item>
+    </style>
 
+    <style name="MaterialCardViewStyleRounded" parent="Widget.MaterialComponents.CardView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cardCornerRadius">@dimen/input_corner_radius</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="android:bottomLeftRadius">0dp</item>
+        <item name="android:bottomRightRadius">0dp</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="circleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
     </style>
 
 </resources>

@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">eEormesse</string>
-    <string name="app_tagline">#theNewStyle</string>
+    <string name="app_tagline">one of the coolest way to shop is what you are about to experience today. Enjoy the experience here and now</string>
     <string name="app_version">1.0.0</string>
     <string name="enter_email_address">Enter Email Address</string>
     <string name="mi_ecommerce">Mi-Ecommerce</string>
@@ -15,4 +15,5 @@
     <string name="log_in">Log in</string>
     <string name="remember_me">Remember me</string>
     <string name="forgot_password">Forgot Password?</string>
+    <string name="welcome_to_eeormesse">Welcome to eEormesse</string>
 </resources>

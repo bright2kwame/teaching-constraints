@@ -3,7 +3,7 @@
     <color name="primary_base">#3C7988</color>
     <color name="primary_base_dark">#034C5E</color>
     <color name="primary_base_light">#3C7988</color>
-    <color name="input_bg">#F4F7FC</color>
+    <color name="input_bg">#FFFFFF</color>
     <color name="button_bg">#1E1D2E</color>
     <color name="input_stroke">#3C7988</color>
     <color name="white">#FFFFFF</color>
