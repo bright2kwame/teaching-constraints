@@ -16,7 +16,14 @@
 
         <activity
             android:name=".Home"
-            android:exported="false" />
+            android:exported="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
         <activity
             android:name=".MemberRegistration"
             android:exported="true" />
@@ -24,10 +31,7 @@
             android:name=".SplashScreen"
             android:theme="@style/Theme.MESTEcommerce.Fullscreen"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
         <activity
             android:name=".Login"
